@@ -15,10 +15,10 @@ class GetRequester
     response.body
   end
   
-  def parse_json(url)
+  def parse_json
     programs = JSON.parse(self.get_response_body)
     programs.collect do |program|
-      program["array"]
+      program
     end
   end
 
