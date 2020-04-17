@@ -19,5 +19,7 @@ class GetRequester
     programs = JSON.parse(self.get_programs)
     programs.collect do |program|
       program[]
+    end
+  end
 
 end
